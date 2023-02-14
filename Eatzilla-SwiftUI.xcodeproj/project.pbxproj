@@ -14,6 +14,10 @@
 		5A3750F7296C1C0D00045E9D /* Eatzilla_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3750F6296C1C0D00045E9D /* Eatzilla_SwiftUITests.swift */; };
 		5A375101296C1C0D00045E9D /* Eatzilla_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A375100296C1C0D00045E9D /* Eatzilla_SwiftUIUITests.swift */; };
 		5A375103296C1C0D00045E9D /* Eatzilla_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A375102296C1C0D00045E9D /* Eatzilla_SwiftUIUITestsLaunchTests.swift */; };
+		5AB17076299B548E00EC5890 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17075299B548E00EC5890 /* DashboardView.swift */; };
+		5AB17078299B567300EC5890 /* Appcolors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17077299B567300EC5890 /* Appcolors.swift */; };
+		5AB1707A299B92A600EC5890 /* LoginCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17079299B92A600EC5890 /* LoginCellView.swift */; };
+		5AB1707C299BA24B00EC5890 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB1707B299BA24B00EC5890 /* UIScreen+Extension.swift */; };
 		5AFCD694299A0D8F004E1C11 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCD693299A0D8F004E1C11 /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +49,10 @@
 		5A3750FC296C1C0D00045E9D /* Eatzilla-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eatzilla-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A375100296C1C0D00045E9D /* Eatzilla_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eatzilla_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		5A375102296C1C0D00045E9D /* Eatzilla_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eatzilla_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5AB17075299B548E00EC5890 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		5AB17077299B567300EC5890 /* Appcolors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appcolors.swift; sourceTree = "<group>"; };
+		5AB17079299B92A600EC5890 /* LoginCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCellView.swift; sourceTree = "<group>"; };
+		5AB1707B299BA24B00EC5890 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		5AFCD693299A0D8F004E1C11 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		5AFCD695299A13FD004E1C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +109,10 @@
 				5A3750E5296C1C0A00045E9D /* Eatzilla_SwiftUIApp.swift */,
 				5A3750E7296C1C0A00045E9D /* ContentView.swift */,
 				5AFCD693299A0D8F004E1C11 /* SplashView.swift */,
+				5AB17075299B548E00EC5890 /* DashboardView.swift */,
+				5AB17079299B92A600EC5890 /* LoginCellView.swift */,
+				5AB17077299B567300EC5890 /* Appcolors.swift */,
+				5AB1707B299BA24B00EC5890 /* UIScreen+Extension.swift */,
 				5A3750E9296C1C0C00045E9D /* Assets.xcassets */,
 				5A3750EB296C1C0C00045E9D /* Preview Content */,
 			);
@@ -262,9 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB1707A299B92A600EC5890 /* LoginCellView.swift in Sources */,
 				5A3750E8296C1C0A00045E9D /* ContentView.swift in Sources */,
+				5AB17078299B567300EC5890 /* Appcolors.swift in Sources */,
+				5AB17076299B548E00EC5890 /* DashboardView.swift in Sources */,
 				5A3750E6296C1C0A00045E9D /* Eatzilla_SwiftUIApp.swift in Sources */,
 				5AFCD694299A0D8F004E1C11 /* SplashView.swift in Sources */,
+				5AB1707C299BA24B00EC5890 /* UIScreen+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +447,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +477,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

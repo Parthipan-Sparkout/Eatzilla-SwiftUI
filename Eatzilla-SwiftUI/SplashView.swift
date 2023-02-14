@@ -13,7 +13,7 @@ struct SplashView: View {
     var body: some View {
         VStack {
             if self.isActive {
-                ContentView()
+                DashboardView()
             } else {
                 Image("splash")
                     .resizable()
