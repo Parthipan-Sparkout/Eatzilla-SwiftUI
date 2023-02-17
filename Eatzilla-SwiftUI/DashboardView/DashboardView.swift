@@ -12,24 +12,28 @@ struct DashboardView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                NavigatorView()
-                    .padding(.bottom, 20)
-                LoginCellView()
-                Text("Hungry? Your food just one click away.")
-                    .font(.system(size: 18, weight: .bold, design: .default))
-                    .padding()
-                    .multilineTextAlignment(.center)
-                
-                Text("View All Shops")
-                    .font(.system(size: 18, weight: .semibold, design: .default))
-                    .frame(width: UIScreen.main.bounds.width - 30, height: 40)
-                    .background(Apptheme.themeColor())
-                    .cornerRadius(8)
-                    .foregroundColor(Color.white)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
+            ScrollView {
+                VStack {
+                    NavigatorView()
+                        .padding(.bottom, 20)
+                    LoginCellView()
+                    Text("Hungry? Your food just one click away.")
+                        .font(.system(size: 20, weight: .bold, design: .default))
+                        .padding()
+                        .multilineTextAlignment(.center)
+                    
+                    Text("View All Shops")
+                        .font(.system(size: 18, weight: .semibold, design: .default))
+                        .frame(width: UIScreen.main.bounds.width - 30, height: 40)
+                        .background(Apptheme.themeColor())
+                        .cornerRadius(8)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.center)
+                    CuisinesView()
+                    BannersView()
+                    PopularBrandsView()
+                    Spacer()
+                }
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
@@ -38,6 +42,7 @@ struct DashboardView: View {
 }
 
 struct NavigatorView: View {
+
     var body: some View {
         HStack {
             Image("menu")
