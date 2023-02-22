@@ -21,14 +21,18 @@ struct DashboardView: View {
                         .font(.system(size: 20, weight: .bold, design: .default))
                         .padding()
                         .multilineTextAlignment(.center)
+                    NavigationLink(destination: SearchViewController()
+                        .navigationTitle("")
+                        .navigationBarHidden(true)) {
+                        Text("View All Shops")
+                            .font(.system(size: 18, weight: .semibold, design: .default))
+                            .frame(width: UIScreen.main.bounds.width - 30, height: 40)
+                            .background(Apptheme.themeColor())
+                            .cornerRadius(8)
+                            .foregroundColor(Color.white)
+                            .multilineTextAlignment(.center)
+                    }
                     
-                    Text("View All Shops")
-                        .font(.system(size: 18, weight: .semibold, design: .default))
-                        .frame(width: UIScreen.main.bounds.width - 30, height: 40)
-                        .background(Apptheme.themeColor())
-                        .cornerRadius(8)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
                     CuisinesView()
                     BannersView()
                     PopularBrandsView()
@@ -42,7 +46,6 @@ struct DashboardView: View {
 }
 
 struct NavigatorView: View {
-
     var body: some View {
         HStack {
             Image("menu")
@@ -60,11 +63,15 @@ struct NavigatorView: View {
                     .font(.system(size: 16))
             }
             Spacer()
-            Image("search")
-                .resizable()
-                .foregroundColor(Color.black)
-                .frame(width: 20, height: 20)
-                .padding(.leading, 15)
+            NavigationLink(destination: SearchViewController().navigationTitle("")) {
+                Image("search")
+                    .resizable()
+                    .foregroundColor(Color.black)
+                    .frame(width: 20, height: 20)
+                    .padding(.leading, 15)
+            }
+            
+                
             Image("icon_cart")
                 .resizable()
                 .frame(width: 20, height: 20)

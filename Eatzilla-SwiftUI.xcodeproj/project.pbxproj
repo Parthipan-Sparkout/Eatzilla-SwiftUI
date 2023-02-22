@@ -26,6 +26,8 @@
 		5AB17078299B567300EC5890 /* Appcolors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17077299B567300EC5890 /* Appcolors.swift */; };
 		5AB1707A299B92A600EC5890 /* LoginCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17079299B92A600EC5890 /* LoginCellView.swift */; };
 		5AB1707C299BA24B00EC5890 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB1707B299BA24B00EC5890 /* UIScreen+Extension.swift */; };
+		5ABE73F1299F5FB700A01778 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE73F0299F5FB700A01778 /* SearchViewController.swift */; };
+		5ABE73F3299FAAEA00A01778 /* NearByRestaurantsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE73F2299FAAEA00A01778 /* NearByRestaurantsModel.swift */; };
 		5AFCD694299A0D8F004E1C11 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCD693299A0D8F004E1C11 /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		5AB17077299B567300EC5890 /* Appcolors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appcolors.swift; sourceTree = "<group>"; };
 		5AB17079299B92A600EC5890 /* LoginCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCellView.swift; sourceTree = "<group>"; };
 		5AB1707B299BA24B00EC5890 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		5ABE73F0299F5FB700A01778 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5ABE73F2299FAAEA00A01778 /* NearByRestaurantsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByRestaurantsModel.swift; sourceTree = "<group>"; };
 		5AFCD693299A0D8F004E1C11 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		5AFCD695299A13FD004E1C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +129,7 @@
 				5A3750E5296C1C0A00045E9D /* Eatzilla_SwiftUIApp.swift */,
 				5A3750E7296C1C0A00045E9D /* ContentView.swift */,
 				5AFCD693299A0D8F004E1C11 /* SplashView.swift */,
+				5ABE73F0299F5FB700A01778 /* SearchViewController.swift */,
 				5A765657299E4303005BC8A3 /* Model */,
 				5A398823299CE64E00E124BF /* DashboardView */,
 				5A398824299CE66700E124BF /* Utils */,
@@ -188,6 +193,7 @@
 				5A779C66299E01D600CBA0F1 /* CuisinesModel.swift */,
 				5A779C68299E291200CBA0F1 /* PopularBrandsModel.swift */,
 				5A765653299E3B53005BC8A3 /* BannersModel.swift */,
+				5ABE73F2299FAAEA00A01778 /* NearByRestaurantsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,9 +335,11 @@
 				5AB1707A299B92A600EC5890 /* LoginCellView.swift in Sources */,
 				5A3750E8296C1C0A00045E9D /* ContentView.swift in Sources */,
 				5A779C69299E291200CBA0F1 /* PopularBrandsModel.swift in Sources */,
+				5ABE73F3299FAAEA00A01778 /* NearByRestaurantsModel.swift in Sources */,
 				5AB17078299B567300EC5890 /* Appcolors.swift in Sources */,
 				5A398826299CE6CE00E124BF /* CuisinesView.swift in Sources */,
 				5AB17076299B548E00EC5890 /* DashboardView.swift in Sources */,
+				5ABE73F1299F5FB700A01778 /* SearchViewController.swift in Sources */,
 				5A3750E6296C1C0A00045E9D /* Eatzilla_SwiftUIApp.swift in Sources */,
 				5AFCD694299A0D8F004E1C11 /* SplashView.swift in Sources */,
 				5A779C67299E01D600CBA0F1 /* CuisinesModel.swift in Sources */,
