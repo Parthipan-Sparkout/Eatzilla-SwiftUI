@@ -12,38 +12,43 @@ struct DashboardView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack {
-                    NavigatorView()
-                        .padding(.bottom, 20)
-                    LoginCellView()
-                    Text("Hungry? Your food just one click away.")
-                        .font(.system(size: 20, weight: .bold, design: .default))
-                        .padding()
-                        .multilineTextAlignment(.center)
-                    NavigationLink(destination: SearchViewController()
-                        .navigationTitle("")
-                        .navigationBarHidden(true)) {
-                        Text("View All Shops")
-                            .font(.system(size: 18, weight: .semibold, design: .default))
-                            .frame(width: UIScreen.main.bounds.width - 30, height: 40)
-                            .background(Apptheme.themeColor())
-                            .cornerRadius(8)
-                            .foregroundColor(Color.white)
+            GeometryReader { bounds in
+                ScrollView {
+                    VStack {
+                        NavigatorView()
+                            .padding(.bottom, 20)
+                        LoginCellView()
+                        Text("Hungry? Your food just one click away.")
+                            .font(.system(size: 20, weight: .bold, design: .default))
+                            .padding()
                             .multilineTextAlignment(.center)
+                        NavigationLink(destination: SearchViewController()
+                            .navigationTitle("")
+                            .navigationBarHidden(true)) {
+                            Text("View All Shops")
+                                .font(.system(size: 18, weight: .semibold, design: .default))
+                                .frame(width: UIScreen.main.bounds.width - 30, height: 40)
+                                .background(Apptheme.themeColor())
+                                .cornerRadius(8)
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+                        }
+                        
+                        CuisinesView()
+                        BannersView()
+                        PopularBrandsView()
+                        Spacer()
                     }
-                    
-                    CuisinesView()
-                    BannersView()
-                    PopularBrandsView()
-                    Spacer()
                 }
-            }
-            .navigationBarTitle("")
+                .navigationBarTitle("")
             .navigationBarHidden(true)
+            }
         }
+        .navigationViewStyle(.stack)
     }
 }
+
+
 
 struct NavigatorView: View {
     var body: some View {
@@ -53,10 +58,11 @@ struct NavigatorView: View {
                 .frame(width: 15, height: 15)
                 .padding(.leading, 20)
                 .padding(.trailing, 20)
-            VStack {
+            VStack(alignment: .leading) {
                 Text("Delivering to")
                     .foregroundColor(Apptheme.themeColor())
                     .font(.system(size: 18))
+                    .multilineTextAlignment(.leading)
                 Text("Saravanampatti, Coimbatore, India")
                     .multilineTextAlignment(.center)
                     .lineLimit(1)
@@ -70,7 +76,6 @@ struct NavigatorView: View {
                     .frame(width: 20, height: 20)
                     .padding(.leading, 15)
             }
-            
                 
             Image("icon_cart")
                 .resizable()

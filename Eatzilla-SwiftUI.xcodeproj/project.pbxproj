@@ -26,6 +26,8 @@
 		5AB17078299B567300EC5890 /* Appcolors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17077299B567300EC5890 /* Appcolors.swift */; };
 		5AB1707A299B92A600EC5890 /* LoginCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB17079299B92A600EC5890 /* LoginCellView.swift */; };
 		5AB1707C299BA24B00EC5890 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB1707B299BA24B00EC5890 /* UIScreen+Extension.swift */; };
+		5AB9D21D29B087FC009A58BF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB9D21C29B087FC009A58BF /* LoginView.swift */; };
+		5AB9D21F29B0D954009A58BF /* EnterPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB9D21E29B0D954009A58BF /* EnterPasswordView.swift */; };
 		5ABE73F1299F5FB700A01778 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE73F0299F5FB700A01778 /* SearchViewController.swift */; };
 		5ABE73F3299FAAEA00A01778 /* NearByRestaurantsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE73F2299FAAEA00A01778 /* NearByRestaurantsModel.swift */; };
 		5AFCD694299A0D8F004E1C11 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCD693299A0D8F004E1C11 /* SplashView.swift */; };
@@ -71,6 +73,8 @@
 		5AB17077299B567300EC5890 /* Appcolors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appcolors.swift; sourceTree = "<group>"; };
 		5AB17079299B92A600EC5890 /* LoginCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCellView.swift; sourceTree = "<group>"; };
 		5AB1707B299BA24B00EC5890 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		5AB9D21C29B087FC009A58BF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5AB9D21E29B0D954009A58BF /* EnterPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPasswordView.swift; sourceTree = "<group>"; };
 		5ABE73F0299F5FB700A01778 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		5ABE73F2299FAAEA00A01778 /* NearByRestaurantsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByRestaurantsModel.swift; sourceTree = "<group>"; };
 		5AFCD693299A0D8F004E1C11 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 				5A3750E7296C1C0A00045E9D /* ContentView.swift */,
 				5AFCD693299A0D8F004E1C11 /* SplashView.swift */,
 				5ABE73F0299F5FB700A01778 /* SearchViewController.swift */,
+				5AB9D21B29B0877C009A58BF /* Login */,
+				5AB9D21A29B08775009A58BF /* Search */,
 				5A765657299E4303005BC8A3 /* Model */,
 				5A398823299CE64E00E124BF /* DashboardView */,
 				5A398824299CE66700E124BF /* Utils */,
@@ -196,6 +202,22 @@
 				5ABE73F2299FAAEA00A01778 /* NearByRestaurantsModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5AB9D21A29B08775009A58BF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		5AB9D21B29B0877C009A58BF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5AB9D21C29B087FC009A58BF /* LoginView.swift */,
+				5AB9D21E29B0D954009A58BF /* EnterPasswordView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A398828299CF48100E124BF /* PopularBrandsView.swift in Sources */,
+				5AB9D21F29B0D954009A58BF /* EnterPasswordView.swift in Sources */,
 				5A779C65299DF7F800CBA0F1 /* Constants.swift in Sources */,
 				5A779C63299DF52F00CBA0F1 /* NetworkClass.swift in Sources */,
 				5A765654299E3B53005BC8A3 /* BannersModel.swift in Sources */,
@@ -340,6 +363,7 @@
 				5A398826299CE6CE00E124BF /* CuisinesView.swift in Sources */,
 				5AB17076299B548E00EC5890 /* DashboardView.swift in Sources */,
 				5ABE73F1299F5FB700A01778 /* SearchViewController.swift in Sources */,
+				5AB9D21D29B087FC009A58BF /* LoginView.swift in Sources */,
 				5A3750E6296C1C0A00045E9D /* Eatzilla_SwiftUIApp.swift in Sources */,
 				5AFCD694299A0D8F004E1C11 /* SplashView.swift in Sources */,
 				5A779C67299E01D600CBA0F1 /* CuisinesModel.swift in Sources */,
