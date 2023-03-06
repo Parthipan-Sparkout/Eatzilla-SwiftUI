@@ -11,9 +11,14 @@ import SwiftUI
 struct LoginView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var mobileNumber: String = ""
+    @State var moveToPassword = false
+    @State var showAlert: Bool = false
     var body: some View {
         VStack {
             HStack {
+                NavigationLink(destination: EnterPasswordView().navigationBarHidden(true), isActive: $moveToPassword) {
+                    EmptyView()
+                }
                 Button(action: {
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
@@ -21,9 +26,7 @@ struct LoginView: View {
                         .foregroundColor(Color.black)
                 }
                 .padding([.leading, .trailing, .top])
-                
                 Spacer()
-                
                 Button(action: {
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
@@ -48,12 +51,18 @@ struct LoginView: View {
                 .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1))
                 .padding([.leading, .trailing])
             Spacer()
-            Button(action: {}) {
+            Button(action: {
+                if mobileNumber.isEmpty {
+                    Helper.alertMessage(title: "Alert!", message: "Mobile number must not empty")
+                } else {
+                    moveToPassword = true
+                }
+            }) {
                 Text("Next")
                     .font(.system(size: 16, weight: .semibold))
+                    .frame(width: UIScreen.main.bounds.width, height: 50)
                     .foregroundColor(Color.white)
             }
-            .frame(width: UIScreen.main.bounds.width, height: 50)
             .background(Color.green)
         }
         

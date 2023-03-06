@@ -16,6 +16,7 @@
 		5A375103296C1C0D00045E9D /* Eatzilla_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A375102296C1C0D00045E9D /* Eatzilla_SwiftUIUITestsLaunchTests.swift */; };
 		5A398826299CE6CE00E124BF /* CuisinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A398825299CE6CE00E124BF /* CuisinesView.swift */; };
 		5A398828299CF48100E124BF /* PopularBrandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A398827299CF48100E124BF /* PopularBrandsView.swift */; };
+		5A74B3C329B1C216003ECA74 /* Alert+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A74B3C229B1C216003ECA74 /* Alert+Extension.swift */; };
 		5A765654299E3B53005BC8A3 /* BannersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A765653299E3B53005BC8A3 /* BannersModel.swift */; };
 		5A765656299E3BB0005BC8A3 /* BannersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A765655299E3BB0005BC8A3 /* BannersView.swift */; };
 		5A779C63299DF52F00CBA0F1 /* NetworkClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A779C62299DF52F00CBA0F1 /* NetworkClass.swift */; };
@@ -63,6 +64,7 @@
 		5A375102296C1C0D00045E9D /* Eatzilla_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eatzilla_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5A398825299CE6CE00E124BF /* CuisinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisinesView.swift; sourceTree = "<group>"; };
 		5A398827299CF48100E124BF /* PopularBrandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularBrandsView.swift; sourceTree = "<group>"; };
+		5A74B3C229B1C216003ECA74 /* Alert+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Extension.swift"; sourceTree = "<group>"; };
 		5A765653299E3B53005BC8A3 /* BannersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersModel.swift; sourceTree = "<group>"; };
 		5A765655299E3BB0005BC8A3 /* BannersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersView.swift; sourceTree = "<group>"; };
 		5A779C62299DF52F00CBA0F1 /* NetworkClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClass.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				5A3750E7296C1C0A00045E9D /* ContentView.swift */,
 				5AFCD693299A0D8F004E1C11 /* SplashView.swift */,
 				5ABE73F0299F5FB700A01778 /* SearchViewController.swift */,
+				5A74B3C229B1C216003ECA74 /* Alert+Extension.swift */,
 				5AB9D21B29B0877C009A58BF /* Login */,
 				5AB9D21A29B08775009A58BF /* Search */,
 				5A765657299E4303005BC8A3 /* Model */,
@@ -366,6 +369,7 @@
 				5AB9D21D29B087FC009A58BF /* LoginView.swift in Sources */,
 				5A3750E6296C1C0A00045E9D /* Eatzilla_SwiftUIApp.swift in Sources */,
 				5AFCD694299A0D8F004E1C11 /* SplashView.swift in Sources */,
+				5A74B3C329B1C216003ECA74 /* Alert+Extension.swift in Sources */,
 				5A779C67299E01D600CBA0F1 /* CuisinesModel.swift in Sources */,
 				5AB1707C299BA24B00EC5890 /* UIScreen+Extension.swift in Sources */,
 				5A765656299E3BB0005BC8A3 /* BannersView.swift in Sources */,
