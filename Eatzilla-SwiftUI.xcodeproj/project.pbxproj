@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A2F602129B5AF7C0053847B /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 5A2F602029B5AF7C0053847B /* CountryPicker */; };
+		5A2F602329B5B0040053847B /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F602229B5B0040053847B /* CountryPicker.swift */; };
 		5A3750E6296C1C0A00045E9D /* Eatzilla_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3750E5296C1C0A00045E9D /* Eatzilla_SwiftUIApp.swift */; };
 		5A3750E8296C1C0A00045E9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3750E7296C1C0A00045E9D /* ContentView.swift */; };
 		5A3750EA296C1C0C00045E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3750E9296C1C0C00045E9D /* Assets.xcassets */; };
@@ -52,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A2F602229B5B0040053847B /* CountryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPicker.swift; sourceTree = "<group>"; };
 		5A3750E2296C1C0A00045E9D /* Eatzilla-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eatzilla-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A3750E5296C1C0A00045E9D /* Eatzilla_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eatzilla_SwiftUIApp.swift; sourceTree = "<group>"; };
 		5A3750E7296C1C0A00045E9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A2F602129B5AF7C0053847B /* CountryPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +196,7 @@
 				5AB1707B299BA24B00EC5890 /* UIScreen+Extension.swift */,
 				5A779C62299DF52F00CBA0F1 /* NetworkClass.swift */,
 				5A779C64299DF7F800CBA0F1 /* Constants.swift */,
+				5A2F602229B5B0040053847B /* CountryPicker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -239,6 +244,9 @@
 			dependencies = (
 			);
 			name = "Eatzilla-SwiftUI";
+			packageProductDependencies = (
+				5A2F602029B5AF7C0053847B /* CountryPicker */,
+			);
 			productName = "Eatzilla-SwiftUI";
 			productReference = 5A3750E2296C1C0A00045E9D /* Eatzilla-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -311,6 +319,9 @@
 				Base,
 			);
 			mainGroup = 5A3750D9296C1C0900045E9D;
+			packageReferences = (
+				5A2F601F29B5AF7C0053847B /* XCRemoteSwiftPackageReference "CountryPicker" */,
+			);
 			productRefGroup = 5A3750E3296C1C0A00045E9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +371,7 @@
 				5A765654299E3B53005BC8A3 /* BannersModel.swift in Sources */,
 				5AB1707A299B92A600EC5890 /* LoginCellView.swift in Sources */,
 				5A3750E8296C1C0A00045E9D /* ContentView.swift in Sources */,
+				5A2F602329B5B0040053847B /* CountryPicker.swift in Sources */,
 				5A779C69299E291200CBA0F1 /* PopularBrandsModel.swift in Sources */,
 				5ABE73F3299FAAEA00A01778 /* NearByRestaurantsModel.swift in Sources */,
 				5AB17078299B567300EC5890 /* Appcolors.swift in Sources */,
@@ -699,6 +711,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A2F601F29B5AF7C0053847B /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/CountryPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A2F602029B5AF7C0053847B /* CountryPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A2F601F29B5AF7C0053847B /* XCRemoteSwiftPackageReference "CountryPicker" */;
+			productName = CountryPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A3750DA296C1C0900045E9D /* Project object */;
 }
