@@ -16,6 +16,7 @@ struct LoginView: View {
     @State var showAlert: Bool = false
     @State private var country: Country?
     @State private var showCountryPicker = false
+    @StateObject private var viewModel = LoginViewModel()
     
     var body: some View {
         VStack {
@@ -62,6 +63,7 @@ struct LoginView: View {
                     }
                 }
                 TextField("Enter your Phone Number", text: $mobileNumber)
+                    .keyboardType(.numberPad)
             }
             .padding(12)
             .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1))
@@ -69,10 +71,23 @@ struct LoginView: View {
             Spacer()
             Button(action: {
                 if mobileNumber.isEmpty {
-                   // Helper.alertMessage(title: "Alert!", message: "Mobile number must not empty")
+                    Helper.alertMessage(title: "Alert!", message: "Mobile number must not empty")
                    
                 } else {
-                    moveToPassword = true
+                    let parameters = ["device_type": "ios", "auth_key": "90/rjhUD0X7SM9iRha0zdw==", "phone": "\(country?.phoneCode ?? "91")\(mobileNumber)", "is_forgot_password": "0"]
+                    viewModel.sendOtpApi(paramaters: parameters) { response in
+                        if response != nil {
+                            if response?.status == true {
+                                if viewModel.isNewUser == 0 {
+                                    moveToPassword = true
+                                }
+                            } else {
+                                Helper.alertMessage(title: "OOPS!", message: response?.message ?? "Something went wrong")
+                            }
+                           
+                        }
+                    }
+                    
                 }
             }) {
                 Text("Next")

@@ -16,6 +16,8 @@
 		5A3750F7296C1C0D00045E9D /* Eatzilla_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3750F6296C1C0D00045E9D /* Eatzilla_SwiftUITests.swift */; };
 		5A375101296C1C0D00045E9D /* Eatzilla_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A375100296C1C0D00045E9D /* Eatzilla_SwiftUIUITests.swift */; };
 		5A375103296C1C0D00045E9D /* Eatzilla_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A375102296C1C0D00045E9D /* Eatzilla_SwiftUIUITestsLaunchTests.swift */; };
+		5A37F20229B9B586007B5F69 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37F20129B9B586007B5F69 /* LoginViewModel.swift */; };
+		5A37F20429B9BB05007B5F69 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37F20329B9BB05007B5F69 /* LoginModel.swift */; };
 		5A398826299CE6CE00E124BF /* CuisinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A398825299CE6CE00E124BF /* CuisinesView.swift */; };
 		5A398828299CF48100E124BF /* PopularBrandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A398827299CF48100E124BF /* PopularBrandsView.swift */; };
 		5A74B3C329B1C216003ECA74 /* Alert+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A74B3C229B1C216003ECA74 /* Alert+Extension.swift */; };
@@ -65,6 +67,8 @@
 		5A3750FC296C1C0D00045E9D /* Eatzilla-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eatzilla-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A375100296C1C0D00045E9D /* Eatzilla_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eatzilla_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		5A375102296C1C0D00045E9D /* Eatzilla_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eatzilla_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5A37F20129B9B586007B5F69 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5A37F20329B9BB05007B5F69 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		5A398825299CE6CE00E124BF /* CuisinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisinesView.swift; sourceTree = "<group>"; };
 		5A398827299CF48100E124BF /* PopularBrandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularBrandsView.swift; sourceTree = "<group>"; };
 		5A74B3C229B1C216003ECA74 /* Alert+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Extension.swift"; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				5A779C66299E01D600CBA0F1 /* CuisinesModel.swift */,
+				5A37F20329B9BB05007B5F69 /* LoginModel.swift */,
 				5A779C68299E291200CBA0F1 /* PopularBrandsModel.swift */,
 				5A765653299E3B53005BC8A3 /* BannersModel.swift */,
 				5ABE73F2299FAAEA00A01778 /* NearByRestaurantsModel.swift */,
@@ -223,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				5AB9D21C29B087FC009A58BF /* LoginView.swift */,
+				5A37F20129B9B586007B5F69 /* LoginViewModel.swift */,
 				5AB9D21E29B0D954009A58BF /* EnterPasswordView.swift */,
 			);
 			path = Login;
@@ -366,6 +372,7 @@
 			files = (
 				5A398828299CF48100E124BF /* PopularBrandsView.swift in Sources */,
 				5AB9D21F29B0D954009A58BF /* EnterPasswordView.swift in Sources */,
+				5A37F20229B9B586007B5F69 /* LoginViewModel.swift in Sources */,
 				5A779C65299DF7F800CBA0F1 /* Constants.swift in Sources */,
 				5A779C63299DF52F00CBA0F1 /* NetworkClass.swift in Sources */,
 				5A765654299E3B53005BC8A3 /* BannersModel.swift in Sources */,
@@ -376,6 +383,7 @@
 				5ABE73F3299FAAEA00A01778 /* NearByRestaurantsModel.swift in Sources */,
 				5AB17078299B567300EC5890 /* Appcolors.swift in Sources */,
 				5A398826299CE6CE00E124BF /* CuisinesView.swift in Sources */,
+				5A37F20429B9BB05007B5F69 /* LoginModel.swift in Sources */,
 				5AB17076299B548E00EC5890 /* DashboardView.swift in Sources */,
 				5ABE73F1299F5FB700A01778 /* SearchViewController.swift in Sources */,
 				5AB9D21D29B087FC009A58BF /* LoginView.swift in Sources */,

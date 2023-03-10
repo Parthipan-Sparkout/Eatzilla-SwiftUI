@@ -16,18 +16,17 @@ class APIConnection {
     class func request<T: Codable>(url: String,
                                    method: HTTPMethod = .get,
                                    parameters: [String: Any]? = nil,
-                                   type: T.Type,
-                                   completion: @escaping (Swift.Result<T, Error>) -> Void)  {
+                                   type: T.Type) async throws -> T {
         
-        guard let url = URL(string: url) else {
+        guard let url1 = URL(string: url) else {
             print("Invalid url...")
             return
         }
         
         
-        print("request url ---->", url)
+        print("request url ---->", url1)
         print("request params ---->", parameters)
-        var request = URLRequest(url: url)
+        var request = URLRequest(url: url1)
         
         if parameters != nil {
             let finalData = try? JSONSerialization.data(withJSONObject: parameters)
@@ -36,17 +35,19 @@ class APIConnection {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpMethod = method.rawValue
         
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            do{
-                let response = try JSONDecoder().decode(T.self, from: data!)
-                print(response)
-                completion(.success(response))
-                
-            } catch (let error) {
-                print(error)
-                completion(.failure(error))
-            }
-        }.resume()
-        
+        return try await withCheckedThrowingContinuation { continuation in
+            URLSession.shared.dataTask(with: request) { data1, response, error in
+                do{
+                    let response = try JSONDecoder().decode(T.self, from: data1!)
+                    print(response)
+                    continuation.resume(with: .success(response))
+                    
+                } catch (let error) {
+                    print(error)
+                    continuation.resume(with: .failure(error))
+                }
+            }.resume()
+            
+        }
     }
 }
